@@ -6,7 +6,6 @@ const nextConfig: NextConfig = {
     unoptimized: true,
   },
   trailingSlash: true,
-  basePath: process.env.NODE_ENV === 'production' ? '/kunj1302.github.io' : '',
 };
 
 export default nextConfig;
