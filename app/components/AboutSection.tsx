@@ -24,10 +24,10 @@ export default function AboutSection() {
 					className="space-y-6"
 				>
 					<p className="text-lg text-gray-300 leading-relaxed text-justify">
-						I am a graduate robotics student passionate about building intelligent robotic systems. Currently, I am pursuing my Master's in Robotics Engineering at the University of Maryland, College Park, where I am developing expertise in autonomous systems, computer vision, and AI.
+						I am a graduate robotics student passionate about building intelligent robotic systems. Currently, I am pursuing my Master&apos;s in Robotics Engineering at the University of Maryland, College Park, where I am developing expertise in autonomous systems, computer vision, and AI.
 					</p>
 					<p className="text-lg text-gray-300 leading-relaxed text-justify">
-						My academic foundation includes a Bachelor's degree in Mechanical Engineering with a minor in Robotics from IIT Jodhpur. During my time there, I worked on several challenging projects, including object detection using LiDAR, reinforcement learning for robotic gait control, and human-following robots.
+						My academic foundation includes a Bachelor&apos;s degree in Mechanical Engineering with a minor in Robotics from IIT Jodhpur. During my time there, I worked on several challenging projects, including object detection using LiDAR, reinforcement learning for robotic gait control, and human-following robots.
 					</p>
 					<p className="text-lg text-gray-300 leading-relaxed text-justify">
 						I have gained valuable industry experience through internships at Symbotic LLC as a Perception Software Engineer, working on autonomous mobile robots for warehouse automation, and as a MITACS Globalink Research Intern at the University of Alberta, focusing on multi-agent reinforcement learning for autonomous vehicles.

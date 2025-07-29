@@ -2,6 +2,7 @@
 
 import { motion } from 'framer-motion';
 import Link from 'next/link';
+import Image from 'next/image';
 import { useState } from 'react';
 import ImageModal from './ImageModal';
 
@@ -85,9 +86,11 @@ export default function PublicationsSection() {
 									onClick={() => publication.image && setModalImage({ src: publication.image, alt: `${publication.journal} logo` })}
 								>
 									{publication.image ? (
-										<img 
+										<Image 
 											src={publication.image} 
 											alt={`${publication.journal} logo`}
+											width={160}
+											height={144}
 											className="object-contain w-full h-full"
 										/>
 									) : (
