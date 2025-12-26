@@ -37,7 +37,7 @@ export default function AboutSection() {
 					</p>
 					<div className="pt-4">
 						<a
-							href="https://drive.google.com/file/d/1pKoxulILLXF02eLkqGYmPNamO3LlZnEH/view?usp=sharing"
+							href="https://drive.google.com/file/d/16Z_HCsU7W7FJGrFFjumbf2hjwfRPXSlT/view?usp=sharing"
 							target="_blank"
 							rel="noopener noreferrer"
 							className="inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-blue-500 to-purple-600 hover:from-blue-600 hover:to-purple-700 rounded-full text-white font-medium transition-all duration-300 hover:scale-105"
