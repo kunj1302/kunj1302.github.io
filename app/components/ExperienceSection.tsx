@@ -8,6 +8,22 @@ import ImageModal from './ImageModal';
 const experiences = [
 	{
 		id: 1,
+		title: 'Research Assistant',
+		company: 'GAMMA Lab',
+		location: 'College Park, Maryland',
+		period: 'Aug 2025 - Present',
+		description: 'Traffic Navigation for Curbside Robots',
+		achievements: [
+			'Developed perception system (3D tracking and detection) using cameras, Lidar for scene understanding.',
+			'Engineered a novel approach by combining fine tuned YOLO, cany edge detector and hough line transform for crosswalk detection with correct 3D position and yaw orientation',
+			'Curated a behavior tree for navigation and trajectory planning using MPPI Planner and SLAM, enabling safe interaction with vehicles and pedestrians at crosswalks and stop signs with ROS 2, C++ and Python.'
+		],
+		technologies: ['ROS 2', 'C++', 'Python', 'SLAM', 'MPPI Planner', 'Behavior Tree', 'Perception', 'Lidar', 'Computer Vision'],
+		image: '/gamma_logo.png',
+		projectImage: '/track 2.png'
+	},
+	{
+		id: 2,
 		title: 'Perception Software Engineer',
 		company: 'Symbotic LLC (NASDAQ: SYM)',
 		location: 'Boston, Massachusetts',
@@ -19,12 +35,12 @@ const experiences = [
 			'Reduced inference time and latency between nodes by 70% using multi-threading and embedding vector caching.',
 			'Automated data collection pipeline and syncing temporal data from onboard IMU and 8 RGB cameras.'
 		],
-		technologies: ['ROS 2', 'Docker', 'Vision Transformer','Perception', 'Computer Vision', 'Multi-threading', 'Python', 'Pytorch', 'Embedded Systems'],
+		technologies: ['ROS 2', 'Docker', 'Vision Transformer', 'Perception', 'Computer Vision', 'Multi-threading', 'Python', 'Pytorch', 'Embedded Systems'],
 		image: '/symbotic_logo.png',
 		projectImage: '/symbot.jpeg'
 	},
 	{
-		id: 2,
+		id: 3,
 		title: 'Computer Vision Graduate Research Assistant',
 		company: 'Bio-Imaging and Machine Vision (BMV) Lab',
 		location: 'College Park, Maryland',
@@ -43,7 +59,7 @@ const experiences = [
 		projectLink: 'https://github.com/kunj13/Crab-Detection-and-Cutting-Automation-System'
 	},
 	{
-		id: 3,
+		id: 4,
 		title: 'MITACS Globalink Research Intern',
 		company: 'University of Alberta',
 		location: 'Edmonton, Canada',
@@ -90,13 +106,13 @@ export default function ExperienceSection() {
 						<div className="flex flex-col lg:flex-row gap-6">
 							{/* Company Logo */}
 							<div className="flex-shrink-0">
-								<div 
+								<div
 									className="w-32 h-28 md:w-40 md:h-36 rounded-xl bg-white/10 flex items-center justify-center p-1 cursor-pointer hover:bg-white/20 transition-colors"
 									onClick={() => experience.image && setModalImage({ src: experience.image, alt: `${experience.company} logo` })}
 								>
 									{experience.image ? (
-										<Image 
-											src={experience.image} 
+										<Image
+											src={experience.image}
 											alt={`${experience.company} logo`}
 											width={160}
 											height={144}
@@ -120,9 +136,9 @@ export default function ExperienceSection() {
 									</div>
 									<span className="text-gray-400 text-sm md:text-base mt-2 md:mt-0">{experience.period}</span>
 								</div>
-								
+
 								<p className="text-gray-300 mb-4 leading-relaxed">{experience.description}</p>
-								
+
 								{experience.achievements && experience.achievements.length > 0 && (
 									<div className="mb-4">
 										<ul className="space-y-1">
@@ -135,7 +151,7 @@ export default function ExperienceSection() {
 										</ul>
 									</div>
 								)}
-								
+
 								<div className="flex flex-wrap gap-2">
 									{experience.technologies.map((tech, index) => (
 										<span
@@ -152,12 +168,12 @@ export default function ExperienceSection() {
 							{experience.projectImage && (
 								<div className="flex-shrink-0 lg:ml-4">
 									<div className="space-y-3">
-										<div 
+										<div
 											className="w-full lg:w-48 h-32 rounded-xl overflow-hidden bg-gradient-to-br from-purple-900/20 to-blue-900/20 border border-white/10 cursor-pointer hover:border-white/30 transition-colors"
 											onClick={() => setModalImage({ src: experience.projectImage, alt: `${experience.title} project` })}
 										>
-											<Image 
-												src={experience.projectImage} 
+											<Image
+												src={experience.projectImage}
 												alt={`${experience.title} project`}
 												width={192}
 												height={128}
@@ -184,7 +200,7 @@ export default function ExperienceSection() {
 					</motion.div>
 				))}
 			</div>
-			
+
 			{/* Image Modal */}
 			<ImageModal
 				isOpen={modalImage !== null}
