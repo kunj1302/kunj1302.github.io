@@ -10,7 +10,10 @@ const projects = [
 	{
 		id: 1,
 		title: 'Deep Reinforcement Learning for Autonomous Parking',
-		description: 'Simulated autonomous car parking in CARLA Simulator using DDPG and PPO algorithms with 90% success rate. Leveraged CNN-based Variational Autoencoder (VAE) for feature extraction and designed optimized reward functions with unique penalty terms.',
+		description: [
+			'Simulated autonomous car parking in CARLA Simulator using DDPG and PPO algorithms with 90% success rate.',
+			'Leveraged CNN-based Variational Autoencoder (VAE) for feature extraction and designed optimized reward functions with unique penalty terms.'
+		],
 		technologies: ['CARLA', 'RL', 'Python', 'DDPG', 'PPO', 'CNN', 'VAE'],
 		image: '/code.jpg',
 		video: '/ddpg_parking_cropped.mp4',
@@ -19,7 +22,10 @@ const projects = [
 	{
 		id: 2,
 		title: 'Safe and Optimal Path Planning for F1 Track',
-		description: 'Implemented LQR, CBF and RRT* for generating dynamically feasible and collision-free paths for an F1 track. Performed grid search optimization and simulated on Turtlebot in Gazebo environment.',
+		description: [
+			'Implemented LQR, CBF and RRT* for generating dynamically feasible and collision-free paths for an F1 track.',
+			'Performed grid search optimization and simulated on Turtlebot in Gazebo environment.'
+		],
 		technologies: ['Python', 'Gazebo', 'LQR', 'CBF', 'RRT*', 'Turtlebot'],
 		image: '/f1_path_planning.jpg',
 		video: '/f1_rrt.mp4',
@@ -27,8 +33,28 @@ const projects = [
 	},
 	{
 		id: 3,
+		title: 'TMI (Too Much Info) - OpenVLA Fine tuning',
+		description: [
+			'Generated action tokens with behavior cloning using camera data as observation and input prompt as conditioning.',
+			'Developed an automated pipeline for OpenVLA on LIBERO Mujoco simulator, demonstrating the impact of NLP perturbations.',
+			'Engineered a hybrid framework using LoRA fine-tuning and LLM filtering, improving manipulation task and action success rates by 35% on noisy instruction sets for 4 DOF robotic arm.'
+		],
+		technologies: ['Mujoco', 'VLA', 'LLMs', 'OpenVLA', 'LoRA', 'LIBERO', 'Behavior Cloning', 'Python'],
+		image: '/code.jpg',
+		video: '/Video Project 2.mp4',
+		video2: '/Video Project 1.mp4',
+		githubLink: 'https://github.com/kunj1302/tmi_openvla'
+	},
+	{
+		id: 4,
 		title: 'Vision Based Intelligence - Real Time Autonomous Navigation for AMR',
-		description: 'Engineered computer vision system for TurtleBot4 autonomous navigation achieving 95% accuracy. Implemented ArUco marker navigation with real-time camera calibration. Developed projective geometry algorithms using Canny edge detection and RANSAC for horizon computation. Built YOLO-based stop sign detector with 98% accuracy. Engineered optical flow obstacle detection using Lucas-Kanade tracking.',
+		description: [
+			'Engineered computer vision system for TurtleBot4 autonomous navigation achieving 95% accuracy.',
+			'Implemented ArUco marker navigation with real-time camera calibration.',
+			'Developed projective geometry algorithms using Canny edge detection and RANSAC for horizon computation.',
+			'Built YOLO-based stop sign detector with 98% accuracy.',
+			'Engineered optical flow obstacle detection using Lucas-Kanade tracking.'
+		],
 		technologies: ['ROS', 'OpenCV', 'Python', 'TurtleBot4', 'ArUco Marker', 'Projective Geometry', 'Optical Flow', 'Computer Vision'],
 		image: '/amr.png',
 		video: '/autonomous_turtle_real.mp4',
@@ -36,26 +62,36 @@ const projects = [
 		githubLink: 'https://github.com/kunj1302/Autonomous_Navigation_AMR'
 	},
 	{
-		id: 4,
+		id: 5,
 		title: 'AI-Powered Human-Following Robot',
-		description: 'Fine-tuned YOLOv8 for improved human tracking accuracy by 20%. Integrated Graph-based SLAM and human detection for autonomous navigation using ROS.',
+		description: [
+			'Fine-tuned YOLOv8 for improved human tracking accuracy by 20%.',
+			'Integrated Graph-based SLAM and human detection for autonomous navigation using ROS.'
+		],
 		technologies: ['YOLOv8', 'SLAM', 'ROS', 'Computer Vision', 'Python'],
 		image: '/human_following.png',
 		githubLink: 'https://github.com/kunj13/human-following-robot'
 	},
 	{
-		id: 5,
+		id: 6,
 		title: 'JLR Autonomous EV Charging Robotic Manipulator',
-		description: 'Led a team of 8 to design and develop an autonomous EV charging station using a custom-designed robotic arm. Simulated robotic arm movements using inverse kinematics and Jacobian Control in MATLAB.',
+		description: [
+			'Led a team of 8 to design and develop an autonomous EV charging station using a custom-designed robotic arm.',
+			'Simulated robotic arm movements using inverse kinematics and Jacobian Control in MATLAB.'
+		],
 		technologies: ['MATLAB', 'Inverse Kinematics', 'Jacobian Control', 'OpenCV', 'EfficientDet', 'Computer Vision', 'Robotic Manipulation'],
 		image: '/ev_charging.jpg',
 		video: '/robot_animation.mp4',
 		githubLink: 'https://github.com/kunj13/Inter-IIT-Tech-Meet-11.-0--Automatic-EV-Charging-station'
 	},
 	{
-		id: 6,
+		id: 7,
 		title: 'Teleoperation of Robot Swarms',
-		description: 'Developed a ROS2 pipeline in Python for the teleoperation of robot swarms for flocking problem. Implemented Iterative Closest Point (ICP) using PCL Library in Python for structural depth estimation. Implemented a single integrator, distributed control model with undirected interaction topology.',
+		description: [
+			'Developed a ROS2 pipeline in Python for the teleoperation of robot swarms for flocking problem.',
+			'Implemented Iterative Closest Point (ICP) using PCL Library in Python for structural depth estimation.',
+			'Implemented a single integrator, distributed control model with undirected interaction topology.'
+		],
 		technologies: ['Python', 'Gazebo', 'URDF', 'RViz', 'SLAM', 'Mobile Robotics', 'ROS2', 'PCL', 'ICP', 'Distributed Control'],
 		image: '/robot_swarms.jpg',
 		video: '/teleop.mp4',
@@ -157,7 +193,11 @@ export default function ProjectsSection() {
 						{/* Content Section */}
 						<div className="p-6">
 							<h3 className="text-xl font-bold mb-3">{project.title}</h3>
-							<p className="text-gray-300 mb-4 text-sm leading-relaxed">{project.description}</p>
+							<ul className="text-gray-300 mb-4 text-sm leading-relaxed list-disc list-inside space-y-1">
+								{project.description.map((point, index) => (
+									<li key={index}>{point}</li>
+								))}
+							</ul>
 							
 							{/* Technologies */}
 							<div className="flex flex-wrap gap-1 mb-4">
