@@ -42,7 +42,7 @@ const projects = [
 		technologies: ['Mujoco', 'VLA', 'LLMs', 'OpenVLA', 'LoRA', 'LIBERO', 'Behavior Cloning', 'Python'],
 		image: '/code.jpg',
 		video: '/Video Project 2.mp4',
-		video2: '/.mp4',
+		video2: '/Video Project 1.mp4',
 		githubLink: 'https://github.com/kunj1302/tmi_openvla'
 	},
 	{
@@ -71,7 +71,7 @@ const projects = [
 		],
 		technologies: ['ROS', 'Python', 'CARLA'],
 		image: '/code.jpg',
-		video: '/output_upscaled.mp4',
+		video: '/frenet_trim.mp4',
 		githubLink: 'https://github.com/kunj1302/frenet_trajectory_planner_ADAS'
 	},
 	{
