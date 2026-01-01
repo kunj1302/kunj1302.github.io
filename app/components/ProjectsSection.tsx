@@ -42,7 +42,7 @@ const projects = [
 		technologies: ['Mujoco', 'VLA', 'LLMs', 'OpenVLA', 'LoRA', 'LIBERO', 'Behavior Cloning', 'Python'],
 		image: '/code.jpg',
 		video: '/Video Project 2.mp4',
-		video2: '/Video Project 1.mp4',
+		video2: '/.mp4',
 		githubLink: 'https://github.com/kunj1302/tmi_openvla'
 	},
 	{
@@ -63,17 +63,31 @@ const projects = [
 	},
 	{
 		id: 5,
+		title: 'Frenet Optimal Trajectory Planner for ADAS',
+		description: [
+			'Implemented a Frenet based optimal trajectory planner integrated with a behavioral planner, generating smooth and collision free trajectories for lane keeping, lane changes, and vehicle following in CARLA Simulator.',
+			'Implemented Frenet coordinate trajectory planning, generating smooth collision-free trajectories using quintic and quartic polynomials with jerk minimization.',
+			'Designed and optimized cost function for trajectory selection incorporating jerk cost, time cost, lateral deviation, and speed deviation metrics to select optimal trajectories.'
+		],
+		technologies: ['ROS', 'Python', 'CARLA'],
+		image: '/code.jpg',
+		video: '/output_upscaled.mp4',
+		githubLink: 'https://github.com/kunj1302/frenet_trajectory_planner_ADAS'
+	},
+	{
+		id: 6,
 		title: 'AI-Powered Human-Following Robot',
 		description: [
-			'Fine-tuned YOLOv8 for improved human tracking accuracy by 20%.',
-			'Integrated Graph-based SLAM and human detection for autonomous navigation using ROS.'
+			'Deployed camera tracking with ROS 2 on industrial AMR, with 80% accuracy by fine-tuning for human detection.',
+			'Integrated ORB SLAM for Lidar navigation and potential field controller for obstacle avoidance using C++.',
+			'Implemented point to plane ICP using PCL for scan matching, combined with optimizations of PCA, Kd tree.'
 		],
-		technologies: ['YOLOv8', 'SLAM', 'ROS', 'Computer Vision', 'Python'],
+		technologies: ['ROS2', 'ORB SLAM', 'C++', 'PCL', 'ICP', 'Computer Vision', 'Python'],
 		image: '/human_following.png',
 		githubLink: 'https://github.com/kunj13/human-following-robot'
 	},
 	{
-		id: 6,
+		id: 7,
 		title: 'JLR Autonomous EV Charging Robotic Manipulator',
 		description: [
 			'Led a team of 8 to design and develop an autonomous EV charging station using a custom-designed robotic arm.',
@@ -85,7 +99,7 @@ const projects = [
 		githubLink: 'https://github.com/kunj13/Inter-IIT-Tech-Meet-11.-0--Automatic-EV-Charging-station'
 	},
 	{
-		id: 7,
+		id: 8,
 		title: 'Teleoperation of Robot Swarms',
 		description: [
 			'Developed a ROS2 pipeline in Python for the teleoperation of robot swarms for flocking problem.',
