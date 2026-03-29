@@ -8,6 +8,30 @@ import ImageModal from './ImageModal';
 const experiences = [
 	{
 		id: 1,
+		title: 'Machine Learning Engineer',
+		company: 'Temple Allen Industries',
+		location: 'Rockville, Maryland',
+		period: 'Feb 2026 - Present',
+		description:
+			'Multi-class detection for airplane sanding operations — optical inspection and learning-based defect analysis for aircraft sanding workflows.',
+		achievements: [
+			'Developed multi-camera optical inspection system for the aircraft sanding process, deploying fine-tuned YOLOv11.',
+			'Created ROS 2 and Python scripts to control robot URDF in scene USD with forward kinematics.',
+			'Fine-tuned YOLOv11 with augmentation techniques to improve recall across multiple underrepresented defect classes (sanding defects, fuselage regions, windows) and built a light- and shadow-invariant model.',
+		],
+		technologies: [
+			'YOLOv11',
+			'ROS 2',
+			'Python',
+			'URDF',
+			'USD',
+			'Computer Vision',
+			'Deep Learning',
+			'Multi-camera',
+		],
+	},
+	{
+		id: 2,
 		title: 'Research Assistant',
 		company: 'GAMMA Lab',
 		location: 'College Park, Maryland',
@@ -23,7 +47,7 @@ const experiences = [
 		projectImage: '/track 2.png'
 	},
 	{
-		id: 2,
+		id: 3,
 		title: 'Perception Software Engineer',
 		company: 'Symbotic LLC (NASDAQ: SYM)',
 		location: 'Boston, Massachusetts',
@@ -40,7 +64,7 @@ const experiences = [
 		projectImage: '/symbot.jpeg'
 	},
 	{
-		id: 3,
+		id: 4,
 		title: 'Computer Vision Graduate Research Assistant',
 		company: 'Bio-Imaging and Machine Vision (BMV) Lab',
 		location: 'College Park, Maryland',
@@ -59,7 +83,7 @@ const experiences = [
 		projectLink: 'https://github.com/kunj13/Crab-Detection-and-Cutting-Automation-System'
 	},
 	{
-		id: 4,
+		id: 5,
 		title: 'MITACS Globalink Research Intern',
 		company: 'University of Alberta',
 		location: 'Edmonton, Canada',
