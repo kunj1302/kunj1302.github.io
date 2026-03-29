@@ -39,3 +39,6 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# 3D Vite portfolio — develop locally or on a dedicated branch; keep off main
+/3d-portfolio/
