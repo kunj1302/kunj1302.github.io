@@ -29,6 +29,7 @@ const experiences = [
 			'Deep Learning',
 			'Multi-camera',
 		],
+		image: '/tai_logo.jpg',
 	},
 	{
 		id: 2,
