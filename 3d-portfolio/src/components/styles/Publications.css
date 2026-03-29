@@ -1,0 +1,129 @@
+.publications-section {
+  position: relative;
+  z-index: 1;
+  background-color: var(--backgroundColor);
+  padding: 80px 0 100px;
+  max-width: var(--cMaxWidth, 1200px);
+  margin: 0 auto;
+}
+
+.publications-section h2 {
+  font-size: clamp(36px, 5vw, 56px);
+  font-weight: 500;
+  margin: 0 0 16px;
+  line-height: 1.1;
+}
+
+.publications-section h2 > span {
+  color: var(--accentColor);
+}
+
+.publications-lead {
+  max-width: 640px;
+  color: #adacac;
+  font-weight: 300;
+  font-size: 16px;
+  margin: 0 0 40px;
+  line-height: 1.5;
+}
+
+.publications-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+
+.publications-card {
+  display: flex;
+  gap: 24px;
+  padding: 24px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.02);
+}
+
+.publications-card-thumb {
+  flex-shrink: 0;
+  width: 100px;
+  height: 100px;
+  border-radius: 8px;
+  overflow: hidden;
+  background: rgba(255, 255, 255, 0.06);
+}
+
+.publications-card-thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.publications-card-body h3 {
+  font-size: 18px;
+  font-weight: 500;
+  margin: 0 0 8px;
+  line-height: 1.35;
+}
+
+.publications-venue {
+  margin: 0 0 10px;
+  color: var(--accentColor);
+  font-size: 14px;
+}
+
+.publications-desc {
+  margin: 0 0 10px;
+  color: #c8c6cd;
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 1.5;
+}
+
+.publications-bullets {
+  margin: 0 0 12px;
+  padding-left: 18px;
+  color: #adacac;
+  font-size: 14px;
+  line-height: 1.45;
+}
+
+.publications-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 12px;
+}
+
+.publications-tags span {
+  font-size: 12px;
+  padding: 4px 10px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.06);
+  color: #adacac;
+}
+
+.publications-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 14px;
+  color: var(--accentColor);
+  text-decoration: none;
+}
+
+.publications-link:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .publications-card {
+    flex-direction: column;
+  }
+
+  .publications-card-thumb {
+    width: 80px;
+    height: 80px;
+  }
+}
